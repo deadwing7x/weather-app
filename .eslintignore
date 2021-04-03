@@ -1,0 +1,6 @@
+ .vscode
+  configs
+  dist
+  node_modules
+  out
+  public
