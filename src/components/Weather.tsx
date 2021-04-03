@@ -116,7 +116,7 @@ const Weather: React.FC<{}> = () => {
                 <>
                   <div className="flex justify-center">
                     <button
-                      className="mt-8 mb-4 outline-none rounded-md bg-blue-500 text-xl text-black-500 p-4"
+                      className="mt-8 mb-4 outline-none rounded-md bg-blue-500 text-xl text-white p-4 hover:bg-blue-700"
                       onClick={fetchForecastWeatherData}
                     >
                       Fetch next 5 days forecast data
@@ -142,14 +142,10 @@ const Weather: React.FC<{}> = () => {
           forecastWeatherDataLoaded ? (
             <ForecastWeatherCard {...forecastWeatherData} />
           ) : (
-            <p className="flex justify-center text-2xl text-red-600 font-bold">
-              {errorMessage}
-            </p>
+            ""
           )
         ) : (
-          <p className="flex justify-center text-2xl text-red-600 font-bold">
-            {errorMessage}
-          </p>
+          ""
         )}
       </div>
     </>
